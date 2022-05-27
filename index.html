@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Gallery</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/myStyle.css">
+</head>
+
+<body>
+    <div class="container mt-3 d-none d-lg-block">
+        <div class="row justify-content-center g-2">
+            <div class="col-2">
+                <div class="row g-2">
+                    <div class="col-12">
+                        <img src="./images/image01.jpg" class="img-fluid" alt="" id="img01">
+                    </div>
+                    <div class="col-12">
+                        <img src="./images/image02.jpg" class="img-fluid" alt="" id="img02">
+                    </div>
+                    <div class="col-12">
+                        <img src="./images/image03.jpg" class="img-fluid" alt="" id="img03">
+                    </div>
+                    <div class="col-12">
+                        <img src="./images/image04.jpg" class="img-fluid" alt="" id="img04">
+                    </div>
+                </div>
+            </div>
+            <div class="col-8"
+                style="background-image: url('./images/image01.jpg'); background-size: cover; background-repeat: round;"
+                id="mainImg">
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3 d-block d-lg-none">
+        <div class="row justify-content-center g-2">
+            <div class="col-10" id="mainImg">
+                <img id="mainImgMobSize" src="./images/image01.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-5 text-center">
+                <ul class="p-0" style="list-style-type: none;">
+                    <li id="blt01" class="d-inline-block bg-primary bg-opacity-25"
+                        style="width: 20px; height: 20px; border-radius: 50%;"></li>
+                    <li id="blt02" class="d-inline-block bg-primary bg-opacity-25"
+                        style="width: 20px; height: 20px; border-radius: 50%;"></li>
+                    <li id="blt03" class="d-inline-block bg-primary bg-opacity-25"
+                        style="width: 20px; height: 20px; border-radius: 50%;"></li>
+                    <li id="blt04" class="d-inline-block bg-primary bg-opacity-25"
+                        style="width: 20px; height: 20px; border-radius: 50%;"></li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="./js/myScript.js"></script>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
